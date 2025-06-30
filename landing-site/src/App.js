@@ -1,10 +1,12 @@
-// src/App.js
-import React from 'react'
-import LandingPage from './LandingPage'
-import './App.css'   // si quieres seguir usando los estilos globales
+import React from 'react';
+import LandingPage from './LandingPage';
 
 function App() {
-  return <LandingPage />
+  return (
+    <div>
+      <LandingPage />
+    </div>
+  );
 }
 
-export default App
+export default App;
