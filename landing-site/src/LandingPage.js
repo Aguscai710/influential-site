@@ -1,7 +1,7 @@
 
 // src/pages/Landing/LandingPage.js
 import React, { useRef, useState, useEffect } from 'react'
-import emailjs from 'emailjs-com'
+//import emailjs from 'emailjs-com'
 
 import styles from './LandingPage.module.css'
 import heroImage from './hero-landing.svg';
@@ -62,8 +62,8 @@ export default function LandingPage() {
            className={styles.logo}
          />
           <div>
-            <button className={styles.buttonDisabled} disabled>Registrarse</button>
-            <button className={styles.buttonDisabled} disabled>Iniciar sesión</button>
+            <button className={styles.buttonRegister} disabled>Registrarse</button> {/* antes buttonDisabled */}
+            <button className={styles.buttonStartSession} disabled>Iniciar sesión</button> {/* antes buttonDisabled */}
           </div>
         </nav>
   
