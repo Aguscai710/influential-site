@@ -15,6 +15,7 @@ import logoImg from './logo.svg';
 import slide1code from './slide1code.png'; 
 import slide2code from './slide2code.png';
 import slide3code from './slide3code.png';
+import slide4code from './slide4code.png';
 
 
 
@@ -203,6 +204,23 @@ export default function LandingPage() {
       </div>
       <img
         src={slide3code}
+        alt="Slide para marcas"
+        className={styles.slideImage}
+      />
+    </div>
+</section>
+
+{/* Slide 4 */}
+<section className={styles.slidecodeSection}>
+    <div className={styles.slidecode}>
+      <div>
+        <h4 className={styles.introSlide}>Para Influencers</h4>
+        <h2 className={styles.formTitle}>Sin caos, sin mails</h2>
+        <p>Organizá tus campañas, propuestas y pagos en un solo lugar. 
+          Influential te simplifica el trabajo sin sacarte el mando..</p>
+      </div>
+      <img
+        src={slide4code}
         alt="Slide para marcas"
         className={styles.slideImage}
       />
