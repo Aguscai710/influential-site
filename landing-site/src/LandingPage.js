@@ -13,6 +13,7 @@ import procesoImg from './topics.svg'; // O la ruta que uses
 import logoImg from './logo.svg';
 
 import slide1code from './slide1code.png'; 
+import slide2code from './slide2code.png';
 
 
 
@@ -156,7 +157,7 @@ export default function LandingPage() {
     </form>
 </section>
 
-
+{/* Slide 1 */}
 <section className={styles.slidecodeSection}>
     <div className={styles.slidecode}>
       <div>
@@ -167,6 +168,23 @@ export default function LandingPage() {
       </div>
       <img
         src={slide1code}
+        alt="Slide para marcas"
+        className={styles.slideImage}
+      />
+    </div>
+</section>
+
+{/* Slide 1 */}
+<section className={styles.slidecodeSection}>
+    <div className={styles.slidecode}>
+      <div>
+        <h4 className={styles.introSlide}>Para Marcas</h4>
+        <h2 className={styles.formTitle}>Campañas con impacto real, no likes vacíos</h2>
+        <p>Influential conecta tu marca con micro y 
+          macro influencers alineados a tus valores. Segmentación precisa, resultados visibles.</p>
+      </div>
+      <img
+        src={slide2code}
         alt="Slide para marcas"
         className={styles.slideImage}
       />
