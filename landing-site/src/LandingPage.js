@@ -19,6 +19,9 @@ import slide4code from './slide4code.png';
 
 import code1 from './slidecodes/Slide1Code';
 import Slide1Code from './slidecodes/Slide1Code';
+import Slide2Code from './slidecodes/Slide2Code';
+import Slide3Code from './slidecodes/Slide3Code';
+import Slide4Code from './slidecodes/Slide4Code';
 
 
 
@@ -162,76 +165,12 @@ export default function LandingPage() {
     </form>
 </section>
 
-{/* Slide 1 */}
-<section className={styles.slidecodeSection}>
-    <div className={styles.slidecode}>
-      <div>
-        <h4 className={styles.introSlide}>Para Marcas</h4>
-        <h2 className={styles.formTitle}>Aliate con creadores, sin estrés</h2>
-        <p>Creamos la infraestructura para que tu marca colabore con creadores sin perder tiempo.
-          Encontrá, coordiná y medí resultados desde una sola plataforma.</p>
-      </div>
-      <img
-        src={slide1code}
-        alt="Slide para marcas"
-        className={styles.slideImage}
-      />
-    </div>
-</section>
-
-{/* Slide 2 */}
-<section className={styles.slidecodeSection}>
-    <div className={styles.slidecode}>
-      <div>
-        <h4 className={styles.introSlide}>Para Marcas</h4>
-        <h2 className={styles.formTitle}>Campañas con impacto real, no likes vacíos</h2>
-        <p>Influential conecta tu marca con micro y 
-          macro influencers alineados a tus valores. Segmentación precisa, resultados visibles.</p>
-      </div>
-      <img
-        src={slide2code}
-        alt="Slide para marcas"
-        className={styles.slideImage}
-      />
-    </div>
-</section>
-
-{/* Slide 3 */}
-<section className={styles.slidecodeSection}>
-    <div className={styles.slidecode}>
-      <div>
-        <h4 className={styles.introSlide}>Para Influencers</h4>
-        <h2 className={styles.formTitle}>Tu comunidad vale más de lo que pensás</h2>
-        <p>Monetizá tu audiencia colaborando con marcas que te representan.
-           Sin intermediarios, sin comisiones escondidas.</p>
-      </div>
-      <img
-        src={slide3code}
-        alt="Slide para marcas"
-        className={styles.slideImage}
-      />
-    </div>
-</section>
-
-{/* Slide 4 */}
-<section className={styles.slidecodeSection}>
-    <div className={styles.slidecode}>
-      <div>
-        <h4 className={styles.introSlide}>Para Influencers</h4>
-        <h2 className={styles.formTitle}>Sin caos, sin mails</h2>
-        <p>Organizá tus campañas, propuestas y pagos en un solo lugar. 
-          Influential te simplifica el trabajo sin sacarte el mando..</p>
-      </div>
-      <img
-        src={slide4code}
-        alt="Slide para marcas"
-        className={styles.slideImage}
-      />
-    </div>
-</section>
 
 
 <Slide1Code />
+<Slide2Code />
+<Slide3Code />
+<Slide4Code />
 
       </div>
 
