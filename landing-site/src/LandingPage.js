@@ -17,6 +17,9 @@ import slide2code from './slide2code.png';
 import slide3code from './slide3code.png';
 import slide4code from './slide4code.png';
 
+import code1 from './slidecodes/Slide1Code';
+import Slide1Code from './slidecodes/Slide1Code';
+
 
 
 
@@ -227,6 +230,8 @@ export default function LandingPage() {
     </div>
 </section>
 
+
+<Slide1Code />
 
       </div>
 
