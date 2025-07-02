@@ -165,14 +165,6 @@ export default function LandingPage() {
       </button>
     </form>
 </section>
-
-
-
-<Slide1Code />
-<Slide2Code />
-<Slide3Code />
-<Slide4Code />
-
       </div>
 
       
