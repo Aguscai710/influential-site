@@ -30,7 +30,10 @@ import Slide4Code from './slidecodes/Slide4Code';
 
 export default function LandingPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const slides = [slide1, slide2, slide3, slide4]; // extendé e
+  const slides = [<Slide1Code />,
+    <Slide2Code />,
+    <Slide3Code />,
+    <Slide4Code />]; // extendé e
     const formRef = useRef()
     const [sent, setSent] = useState(false)
 
@@ -93,13 +96,11 @@ export default function LandingPage() {
         </p>
       </section>
 
-      <section className={styles.carouselSection}>
-      <img
-          key={currentSlide} // clave para forzar la animación en cada cambio
-          src={slides[currentSlide]}
-          alt={`Slide ${currentSlide + 1}`}
-          className={styles.carouselImage}
-        />
+      {/*// clave para forzar la animación en cada cambio ->> key={currentSlide}*/}
+      <section className={styles.carouselSection}> 
+        <div key={currentSlide} className={styles.carouselImage}> 
+          {slides[currentSlide]}
+        </div>
       </section>
 
       <section className={styles.procesoSection}>
