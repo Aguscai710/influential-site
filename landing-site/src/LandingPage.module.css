@@ -91,11 +91,42 @@
   justify-content: center;
 }
 
-.carouselImage {
+/* Nuevo contenedor para posicionar los slides */
+.carouselContainer {
+  position: relative;
   width: 100%;
   max-width: 900px;
+  height: 400px;
+  /* Asegurate de que tenga una altura definida */
   border-radius: 20px;
-  animation: slideInFromLeft 2.0s ease-out;
+  overflow: hidden;
+}
+
+/* ESTADO INICIAL (OCULTO):
+  Este es el estado por defecto del slide, equivalente al 0% de tu animación.
+*/
+.carouselImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Estado inicial: invisible y movido a la izquierda */
+  opacity: 0;
+  transform: translateX(-30px);
+
+  /* La magia: le decimos al navegador que anime estos cambios */
+  transition: opacity 1.1s ease-out, transform 1.1s ease-out;
+}
+
+/* ESTADO FINAL (VISIBLE):
+  Esta clase se agrega con React y es el estado final, equivalente al 100% de tu animación.
+*/
+.carouselImage.active {
+  /* Estado final: visible y en su posición original */
+  opacity: 1;
+  transform: translateX(0);
 }
 
 

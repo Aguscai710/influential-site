@@ -97,11 +97,18 @@ export default function LandingPage() {
       </section>
 
       {/*// clave para forzar la animación en cada cambio ->> key={currentSlide}*/}
-      <section className={styles.carouselSection}> 
-        <div key={currentSlide} className={styles.carouselImage}> 
-          {slides[currentSlide]}
-        </div>
-      </section>
+      <section className={styles.carouselSection}>
+  <div className={styles.carouselContainer}>
+    {slides.map((slide, index) => (
+      <div
+        key={index}
+        className={`${styles.carouselImage} ${currentSlide === index ? styles.active : ''}`}
+      >
+        {slide}
+      </div>
+    ))}
+  </div>
+</section>
 
       <section className={styles.procesoSection}>
         <img
