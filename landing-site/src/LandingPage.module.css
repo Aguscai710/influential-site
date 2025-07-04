@@ -96,10 +96,12 @@
   position: relative;
   width: 100%;
   max-width: 900px;
-  height: 400px;
-  /* Asegurate de que tenga una altura definida */
+  height: auto;
+  min-height: 500px;
+  /* Increased from 400px */
   border-radius: 20px;
-  overflow: hidden;
+  overflow: visible;
+  /* Changed from hidden to visible */
 }
 
 /* ESTADO INICIAL (OCULTO):
@@ -248,12 +250,16 @@
 .slidecode{
   background-color: #d5fe7d;
   width: 100%;
-  max-width: 700px;
+  max-width: 1000px;
   border-radius: 20px;
-  padding: 2rem ;
+  padding: 4rem ;
   display: flex;
-  justify-content: flex-start;
-  position: relative;
+  justify-content: space-between;
+    align-items: center;
+    /* centra verticalmente */
+    position: relative;
+    gap: 2rem;
+    /* separación entre texto e imagen */
 }
 
 .slidecode::after {
@@ -262,7 +268,7 @@
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  width: 80%;
+  width: 90%;
   height: 2px;
   background-color: #333;
 }
